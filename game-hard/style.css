@@ -1,0 +1,202 @@
+/* Hard Game Page Styles */
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 540px;
+    margin: 0 auto 1.5rem;
+}
+
+.game-info-bar {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.difficulty-value {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--dark);
+    background: var(--white);
+    padding: 0.6rem 1.25rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+/* Sudoku Board */
+.sudoku-board {
+    display: grid;
+    gap: 4px;
+    background-color: var(--dark);
+    border: 4px solid var(--dark);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.sudoku-board-9 {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 540px;
+}
+
+.subgrid {
+    display: grid;
+    gap: 1px;
+    background-color: #b2bec3;
+}
+
+.subgrid-3x3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+    background-color: var(--white);
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    min-width: 0;
+    transition: background-color 0.2s ease;
+}
+
+.cell-given {
+    font-weight: 700;
+    color: var(--dark);
+    background-color: #f8f9fa;
+}
+
+.cell-player {
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.cell-empty {
+    padding: 0;
+}
+
+.cell-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: var(--primary);
+    background: transparent;
+    -moz-appearance: textfield;
+}
+
+.cell-input::-webkit-outer-spin-button,
+.cell-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cell-input:focus {
+    outline: none;
+    background-color: rgba(9, 132, 227, 0.1);
+}
+
+/* Number Pad */
+.game-controls {
+    max-width: 540px;
+    margin: 1.5rem auto 0;
+    text-align: center;
+}
+
+.number-pad {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.num-btn {
+    width: 48px;
+    height: 48px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.num-btn:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.game-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .sudoku-board-9 {
+        max-width: 95vw;
+    }
+
+    .cell {
+        font-size: 1rem;
+    }
+
+    .cell-input {
+        font-size: 0.9rem;
+    }
+
+    .game-header {
+        max-width: 95vw;
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+    }
+
+    .game-controls {
+        max-width: 95vw;
+    }
+
+    .num-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .game-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .cell {
+        font-size: 0.85rem;
+    }
+
+    .cell-input {
+        font-size: 0.8rem;
+    }
+
+    .num-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 0.9rem;
+    }
+}
