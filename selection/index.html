@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Master - Game Selection</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../" class="nav-brand">
+            <svg class="nav-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <line x1="9" y1="3" x2="9" y2="21"/>
+                <line x1="15" y1="3" x2="15" y2="21"/>
+                <line x1="3" y1="9" x2="21" y2="9"/>
+                <line x1="3" y1="15" x2="21" y2="15"/>
+            </svg>
+            <span>Sudoku Master</span>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+        <div class="nav-links">
+            <a href="../">Home</a>
+            <a href="../selection/" class="active">Games</a>
+            <a href="../game-hard/">Hard</a>
+            <a href="../game-easy/">Easy</a>
+            <a href="../rules/">Rules</a>
+            <a href="../highscores/">Scores</a>
+            <a href="../login/">Login</a>
+            <a href="../register/">Register</a>
+        </div>
+    </nav>
+
+    <main class="page-container">
+        <h1 class="page-title">Select a Game</h1>
+        <p class="page-subtitle">Choose a puzzle to solve. Click any game to start playing.</p>
+
+        <div class="game-list">
+            <a href="../game-hard/" class="game-card card">
+                <div class="game-info">
+                    <h2 class="game-name">Sunday Challenge</h2>
+                    <p class="game-author">by <span class="author-name">Alex Chen</span></p>
+                </div>
+                <div class="game-meta">
+                    <span class="difficulty-badge hard">Hard 9x9</span>
+                    <span class="game-time">~25 min</span>
+                </div>
+            </a>
+
+            <a href="../game-hard/" class="game-card card">
+                <div class="game-info">
+                    <h2 class="game-name">Mind Bender</h2>
+                    <p class="game-author">by <span class="author-name">Maria Santos</span></p>
+                </div>
+                <div class="game-meta">
+                    <span class="difficulty-badge hard">Hard 9x9</span>
+                    <span class="game-time">~30 min</span>
+                </div>
+            </a>
+
+            <a href="../game-hard/" class="game-card card">
+                <div class="game-info">
+                    <h2 class="game-name">The Impossible</h2>
+                    <p class="game-author">by <span class="author-name">James Wilson</span></p>
+                </div>
+                <div class="game-meta">
+                    <span class="difficulty-badge hard">Hard 9x9</span>
+                    <span class="game-time">~40 min</span>
+                </div>
+            </a>
+
+            <a href="../game-hard/" class="game-card card">
+                <div class="game-info">
+                    <h2 class="game-name">Quick Solve</h2>
+                    <p class="game-author">by <span class="author-name">Sarah Park</span></p>
+                </div>
+                <div class="game-meta">
+                    <span class="difficulty-badge medium">Medium 9x9</span>
+                    <span class="game-time">~15 min</span>
+                </div>
+            </a>
+
+            <a href="../game-hard/" class="game-card card">
+                <div class="game-info">
+                    <h2 class="game-name">Daily Puzzle #42</h2>
+                    <p class="game-author">by <span class="author-name">David Kim</span></p>
+                </div>
+                <div class="game-meta">
+                    <span class="difficulty-badge medium">Medium 9x9</span>
+                    <span class="game-time">~18 min</span>
+                </div>
+            </a>
+
+            <a href="../game-hard/" class="game-card card">
+                <div class="game-info">
+                    <h2 class="game-name">Beginner's Luck</h2>
+                    <p class="game-author">by <span class="author-name">Emily Brown</span></p>
+                </div>
+                <div class="game-meta">
+                    <span class="difficulty-badge easy">Easy 9x9</span>
+                    <span class="game-time">~10 min</span>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Sudoku Master &copy; 2026. Built with pure HTML &amp; CSS.</p>
+    </footer>
+</body>
+</html>
