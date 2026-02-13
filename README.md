@@ -20,7 +20,7 @@ https://github.com/ivanlxc/cs5610_project_1
 
 ## Video walkthrough
 
-Link to be added
+https://youtu.be/CnXA-kqhlC0
 
 ## Writeup
 
